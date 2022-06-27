@@ -16,6 +16,7 @@ body{
   justify-content: center;
   height: 100vh;
   overflow: hidden;
+  background-color: black;
 }
 
 .container{
@@ -52,15 +53,18 @@ body{
   opacity: 0;
 }
 
+
+/*Class Active(active)*/
 .panel.active{
   flex: 5;
 }
 
 .panel.active h3{
   opacity: 1;
-
+  transition: opacity 0.3s ease-in 0.4s;
 }
 
+/*Responsive*/
 @media(max-width: 480px){
   .container{
     width: 100vw;
